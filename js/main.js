@@ -14,5 +14,16 @@
     // scores = 10; //constなのでこの書き換えはできない
 
     console.log(scores.length);
+
+
+    console.log(`Score: ${scores[0]}`);
+    console.log(`Score: ${scores[1]}`);
+    console.log(`Score: ${scores[2]}`);
+
+    // 書き換え大変なのでfor文つかおう
+
+    for(let i = 0; i < scores.length; i++){ //scores.length　スコアの要素の数分
+        console.log(`Score${i} ${scores[i]}`);
+    }
 }
 
