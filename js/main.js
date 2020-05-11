@@ -25,5 +25,21 @@
     for(let i = 0; i < scores.length; i++){ //scores.length　スコアの要素の数分
         console.log(`Score${i} ${scores[i]}`);
     }
+    
+// 　　便利な命令
+//     先頭に要素を使いたい時　unshift()
+//     末尾に追加したいとき　PushManager()
+//     追加から削除 shift()
+//     末尾から削除 pop()
+
+
+const scores2 = [80,90,40,70];
+scores2.push(60,50);
+scores.shift();
+for(let i = 0; i < scores2.length; i++){
+    console.log(`Score2${i} ${scores2[i]}`);
+}
+
+
 }
 
