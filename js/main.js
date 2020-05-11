@@ -2,12 +2,14 @@
 // forsach
 
 {
-   const scores = [80,90,40,70];
+   const prices = [180,190,200];
+//    const updetaPrices = prices.map( (price) => {
+//    return price + 20;}
 
-//    scores.forEach((score) => {
-    scores.forEach((score,index) => { //要素のインデックスも表示
-       console.log(`Score${index} :${score}`);
-   });
+// 配列になんらかの処理をしたいときはmap();を使う
+
+const updetaPrices = prices.map(price => price + 20);
+console.log(updetaPrices);
 
 
 }
