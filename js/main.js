@@ -1,13 +1,21 @@
 'use strict';
 
 {
-    const str = 'hello';
+    // 配列を連結する
+    const d = [2019,11,14];
+    // console.log(d.join('/'));
+    // console.log(d.join(''));
 
-    //console.log(str.length);
-    // str.subrtring(開始位置、終了位置);　subrtring() 部分文字列を取得する
-    
-    console.log(str.substring(2,4));
+    // 文字列を配列に
+    const t = '17:08:24';
+    console.log(t.split(':'));
 
-    console.log(str[1]); //配列と同じようにつかえるわけではないので注意
+    // 分割代入
+    const [hour,minit,second] = t.split(':');
+    console.log(hour);
+    console.log(minit);
+    console.log(second);
+
+
 }
 
