@@ -1,21 +1,24 @@
 'use strict';
 
 {
-    // 配列を連結する
-    const d = [2019,11,14];
-    // console.log(d.join('/'));
-    // console.log(d.join(''));
+   const scores = [10,3,9];
+   let sum = 0;
 
-    // 文字列を配列に
-    const t = '17:08:24';
-    console.log(t.split(':'));
+   scores.forEach(score => {
+       sum += score;
+   });
 
-    // 分割代入
-    const [hour,minit,second] = t.split(':');
-    console.log(hour);
-    console.log(minit);
-    console.log(second);
+   const avg = sum/ scores.length;
+
+//    console.log(sum);
+//    console.log(avg);
+
+console.log(Math.floor(avg));　//小数点以下切り捨て
+console.log(Math.ceil(avg));　//小数点以下切り上げ
+console.log(Math.round(avg)); //四捨五入
+console.log(avg.toFixed(3)); 　//指定した小数点まで
+
+console.log( Math.random());
 
 
 }
-
