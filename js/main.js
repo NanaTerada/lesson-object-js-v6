@@ -18,21 +18,17 @@
 
 }
 
-    class SponsorPost{
+    class SponsorPost extends Post{ //extends Post 親クラスの継承
         constructor(text,sponsor) {
-            this.text = text;
-            this.likeCount = 0;
+            super(text); //子クラスの時はこれいる
             this.sponsor = sponsor ;
         }
 
         show() {
-            console.log(`${this.text} - ${this.likeCount}likes`);
+            super.show();
             console.log(`...sponsored by ${this.sponsor}`);
     }
-    like() {
-        this.likeCount++;
-        this.show();
-    }
+    
 
 }
 
