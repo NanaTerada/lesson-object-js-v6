@@ -1,15 +1,20 @@
 'use strict';
-
+// クラス！！！
 {
-// const name = 'taguchi' ;
-const name = 5;
+    const posts = [
+        {
+            text:'jsの勉強中...',
+            likeCount : 0 ,
+        },
+        {
+            text:'プログラミング楽しい！...',
+            likeCount : 0 ,  
+        },
+    ];
 
-
-try { 
-    console.log(name.toUpperCase());
-} catch (e){
-    console.log(e);
-}
-    console.log('finish');
+    function show(post) {
+        console.log(`${post.text} - ${post.likeCount}いいね`);
+    }
+    show(posts[0]);
 }
 
