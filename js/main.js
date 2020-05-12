@@ -1,18 +1,22 @@
 'use strict';
 
 {
-    const numbers = [1,4,7,8,10];
+    const point = {
+        x: 100,
+        y:180,
+    };
+　　// 再代入
+    point.x = 120;
+    point['y'] = 150;
 
-    // const evenNumbers = numbers.filter( (number) => {
-    //     if( number % 2 === 0){
-    //         return true;
-    //     } else {
-    //         return false;
-    //     }
-    // });
+    console.log(point.x);
+    console.log(point['y']);
 
-    const evenNumbers = numbers.filter(number => number % 2 === 0);
-       
-    console.log(evenNumbers);
+    point.z = 200;　//プロパティの追加
+    delete point.y; //プロパティの削除
+
+    console.log(point);
+
+
 }
 
