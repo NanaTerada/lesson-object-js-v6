@@ -1,22 +1,13 @@
 'use strict';
 
 {
-    // let x = 1;
-    // let y = x;
-    // x = 5;
-    // console.log(x); //5
-    // console.log(y); //1
+    const str = 'hello';
 
-    // let x = [1,2];
-    // let y = x;
-    // x[0] = 5;
-    // console.log(x); //[5,2]
-    // console.log(y); //[1,2]になるのでは？ｔおもうが　[5,2]　となる
+    //console.log(str.length);
+    // str.subrtring(開始位置、終了位置);　subrtring() 部分文字列を取得する
     
-    let x = [1,2];
-    let y = [...x];
-    x[0] = 5;
-    console.log(x); 
-    console.log(y);
+    console.log(str.substring(2,4));
+
+    console.log(str[1]); //配列と同じようにつかえるわけではないので注意
 }
 
