@@ -14,6 +14,10 @@
         this.likeCount++;
         this.show();
     }
+// static 静的メソッド this使えない　インスタンスをつくらずに呼び出す
+    static showInfo() {
+        console.log('Post class vertion 1.0');
+    }
 }
 
 const posts = [
@@ -23,9 +27,8 @@ const posts = [
 ];
 
 posts[0].like();
+Post.showInfo();
 
-// posts[0].show();
-// posts[1].show();
 
 }
 
